@@ -6,11 +6,11 @@ import asyncio
 from collections import deque
 
 
-@borg.on(events.NewMessage(pattern=r"\.heart", outgoing=True))
+@borg.on(events.NewMessage(pattern=r"\.umma", outgoing=True))
 async def _(event):
 	if event.fwd_from:
 		return
-	deq = deque(list("💙💛💓💔💘💕💜💚💝💞💟"))
+	deq = deque(list("ഒരു😘😍😘തരുമോ😘😘മോളെ😘😍😘😍😘"))
 	for _ in range(100):
 		await asyncio.sleep(0.1)
 		await event.edit("".join(deq))
