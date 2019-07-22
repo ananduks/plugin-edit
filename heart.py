@@ -10,7 +10,7 @@ from collections import deque
 async def _(event):
 	if event.fwd_from:
 		return
-	deq = deque(list("💙💛💓💔💘💕💜💚💝💞💟"))
+	deq = deque(list("അട മോനെ ഇതൊന്നും അത്ര നല്ലതല്ല കെട്ടോ🤣🤣🤣"))
 	for _ in range(100):
 		await asyncio.sleep(0.1)
 		await event.edit("".join(deq))
