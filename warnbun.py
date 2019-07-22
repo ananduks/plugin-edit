@@ -9,7 +9,7 @@ from uniborg.util import admin_cmd
 async def _(event):
     if event.fwd_from:
         return
-    mentions = "`You Have  1/3  warnings...\nWatch out!....\nReason for last warn: കോളനി വാണം സ്പോട്ടെഡ് 😂😂😂"
+    mentions = "`You Have  1/3  warnings...\nWatch out!....\nReason for last warn: കോളനി വാണം സ്പോട്ടെഡ് 😂😂😂`"
     chat = await event.get_input_chat()
     async for x in borg.iter_participants(chat, filter=ChannelParticipantsAdmins):
         mentions += f"[\u2063](tg://user?id={x.id})"
@@ -55,7 +55,7 @@ from uniborg.util import admin_cmd
 async def _(event):
     if event.fwd_from:
         return
-    mentions = "`You Have  3/3  warnings...\nBanned!!!....\nReason for ban: അട മോനെ ഇതൊന്നും അത്ര നല്ലതല്ല കെട്ടോ
+    mentions = "`You Have  3/3  warnings...\nBanned!!!....\nReason for ban: അട മോനെ ഇതൊന്നും അത്ര നല്ലതല്ല കെട്ടോ"`
     chat = await event.get_input_chat()
     async for x in borg.iter_participants(chat, filter=ChannelParticipantsAdmins):
         mentions += f"[\u2063](tg://user?id={x.id})"
@@ -101,7 +101,7 @@ from uniborg.util import admin_cmd
 async def _(event):
     if event.fwd_from:
         return
-    mentions = "`Warning!! User Gbanned By Admin...\nReason: പോയി ചാകട തെണ്ടി . `"
+    mentions = "`Warning!! User Gbanned By Admin...\nReason: പോയി ചാകട തെണ്ടി`"
     chat = await event.get_input_chat()
     async for x in borg.iter_participants(chat, filter=ChannelParticipantsAdmins):
         mentions += f"[\u2063](tg://user?id={x.id})"
